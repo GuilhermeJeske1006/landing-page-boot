@@ -23,6 +23,7 @@
       <nav class="navbar__links">
         <a href="#como-funciona">Como funciona</a>
         <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#ia" class="navbar__link--ia">IA <span class="nav-badge-new">Novo</span></a>
         <a href="#planos">Planos</a>
         <a href="#faq">FAQ</a>
       </nav>
@@ -36,6 +37,7 @@
     <nav class="navbar__mobile" id="mobile-menu">
       <a href="#como-funciona" onclick="toggleMenu()">Como funciona</a>
       <a href="#funcionalidades" onclick="toggleMenu()">Funcionalidades</a>
+      <a href="#ia" onclick="toggleMenu()">IA ✨</a>
       <a href="#planos" onclick="toggleMenu()">Planos</a>
       <a href="#faq" onclick="toggleMenu()">FAQ</a>
       <a href="https://wa.me/5500000000000?text=Oi%2C+quero+come%C3%A7ar+a+usar+o+Finance-boot%21" target="_blank" class="btn btn--primary" onclick="toggleMenu()">Começar grátis</a>
@@ -56,7 +58,7 @@
             Controle suas finanças pelo <span class="highlight">WhatsApp</span> — sem complicação
           </h1>
           <p class="hero__sub">
-            Registre entradas e saídas, gere relatórios profissionais e fique no controle do seu dinheiro — tudo numa conversa no WhatsApp. Funciona para você e para sua empresa.
+            Registre entradas e saídas, gere relatórios profissionais e fique no controle do seu dinheiro — tudo numa conversa no WhatsApp. Fale em linguagem natural ou mande um áudio e a IA entende e registra automaticamente. Funciona para você e para sua empresa.
           </p>
           <div class="hero__actions">
             <a href="https://wa.me/5500000000000?text=Oi%2C+quero+come%C3%A7ar+a+usar+o+Finance-boot%21" target="_blank" class="btn btn--whatsapp btn--lg">
@@ -184,15 +186,93 @@
             <h3>Multi-usuário por empresa</h3>
             <p>No plano Business, vários colaboradores podem lançar transações na mesma empresa. Perfeito para times pequenos.</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-card__icon">🏷️</div>
-            <h3>Categorias personalizadas</h3>
-            <p>Organize cada gasto por categoria e veja exatamente onde seu dinheiro está indo com o breakdown mensal.</p>
+          <div class="feature-card feature-card--ai">
+            <div class="feature-card__icon">🤖</div>
+            <h3>Modo IA <span class="feature-badge-pro">Pro</span></h3>
+            <p>Registre gastos em linguagem natural, sem precisar navegar por menus. A IA interpreta e categoriza automaticamente.</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-card__icon">🔒</div>
-            <h3>Dados seguros</h3>
-            <p>Banco MySQL com autenticação JWT, pagamentos via AbacatePay e monitoramento em tempo real.</p>
+          <div class="feature-card feature-card--ai">
+            <div class="feature-card__icon">🎤</div>
+            <h3>Áudio para Finanças <span class="feature-badge-pro">Pro</span></h3>
+            <p>Mande um áudio de voz no WhatsApp. A IA transcreve e registra a transação — perfeito para registrar no trânsito.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== IA ========== -->
+    <section class="section ai-section" id="ia">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label"><span class="ai-badge">✨ Novo</span> Inteligência Artificial</p>
+          <h2 class="section-title">Registre gastos como se estivesse conversando</h2>
+          <p class="section-desc">Chega de menus. No modo IA você fala naturalmente — ou manda um áudio — e o Finance-boot entende e registra automaticamente. Exclusivo nos planos Pro e Business.</p>
+        </div>
+        <div class="ai-layout">
+          <div class="ai-features-list">
+            <div class="ai-feature-item">
+              <div class="ai-feature-icon">🤖</div>
+              <div>
+                <h3>Linguagem natural</h3>
+                <p>Escreva como faria com um amigo: <em>"Gastei 80 reais em combustível"</em> ou <em>"Recebi 2 mil de freelance"</em>. A IA interpreta, categoriza e registra na hora.</p>
+              </div>
+            </div>
+            <div class="ai-feature-item">
+              <div class="ai-feature-icon">🎤</div>
+              <div>
+                <h3>Voz para texto</h3>
+                <p>Mande um áudio de voz no WhatsApp. A IA transcreve e processa automaticamente — ideal para registrar um gasto enquanto você está no trânsito.</p>
+              </div>
+            </div>
+            <div class="ai-feature-item">
+              <div class="ai-feature-icon">💡</div>
+              <div>
+                <h3>Insights semanais</h3>
+                <p>Toda sexta-feira você recebe no WhatsApp um resumo inteligente com análise dos seus gastos, alertas de orçamento e dicas personalizadas para economizar.</p>
+              </div>
+            </div>
+            <div class="ai-cta-row">
+              <span class="ai-plan-badge">Exclusivo Pro e Business</span>
+              <a href="https://wa.me/5500000000000?text=Oi%2C+quero+assinar+o+plano+Pro+do+Finance-boot%21" target="_blank" class="btn btn--primary">Ativar modo IA</a>
+            </div>
+          </div>
+          <div class="ai-mockup">
+            <div class="chat-mockup">
+              <div class="chat-mockup__header">
+                <div class="chat-avatar">🤖</div>
+                <div>
+                  <strong>Finance-boot · Modo IA</strong>
+                  <span class="online-dot">● Online</span>
+                </div>
+              </div>
+              <div class="chat-mockup__body">
+                <div class="chat-bubble user ai-audio-bubble">
+                  🎤 <em>Áudio · 0:04</em>
+                </div>
+                <div class="chat-bubble bot">
+                  🎤 _"Gastei cinquenta reais no mercado"_<br/><br/>
+                  🤖 <strong>Saída registrada!</strong><br/><br/>
+                  📉 R$ 50,00<br/>
+                  🏷️ Categoria: Alimentação<br/>
+                  📅 Hoje
+                </div>
+                <div class="chat-bubble user">Recebi 2000 de freelance</div>
+                <div class="chat-bubble bot">
+                  🤖 <strong>Entrada registrada!</strong><br/><br/>
+                  📈 R$ 2.000,00<br/>
+                  🏷️ Categoria: Freelance<br/>
+                  📅 Hoje
+                </div>
+                <div class="chat-bubble user">Qual meu saldo?</div>
+                <div class="chat-bubble bot">
+                  💰 <strong>Saldo do Mês</strong><br/><br/>
+                  📈 Receitas: R$ 2.000,00<br/>
+                  📉 Despesas: R$ 50,00<br/>
+                  ━━━━━━━━<br/>
+                  🤑 Saldo: + R$ 1.950,00
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -239,7 +319,7 @@
             <div class="pricing-card__header">
               <p class="pricing-card__name">Pro</p>
               <div class="pricing-card__price">
-                <span class="price">R$ 29</span>
+                <span class="price">R$ 19,90</span>
                 <span class="price-period">/mês</span>
               </div>
               <p class="pricing-card__desc">Para autônomos e MEIs que precisam separar PF de PJ.</p>
@@ -251,6 +331,8 @@
               <li><span class="check">✓</span> Relatório automático mensal</li>
               <li><span class="check">✓</span> Transações recorrentes</li>
               <li><span class="check">✓</span> Finanças pessoais (PF)</li>
+              <li><span class="check check--ai">✨</span> <strong>Modo IA</strong> (linguagem natural)</li>
+              <li><span class="check check--ai">✨</span> Transcrição de áudio</li>
               <li class="disabled"><span class="cross">✗</span> Empresas ilimitadas</li>
               <li class="disabled"><span class="cross">✗</span> Multi-usuário por empresa</li>
             </ul>
@@ -264,7 +346,7 @@
             <div class="pricing-card__header">
               <p class="pricing-card__name">Business</p>
               <div class="pricing-card__price">
-                <span class="price">R$ 79</span>
+                <span class="price">R$ 49,90</span>
                 <span class="price-period">/mês</span>
               </div>
               <p class="pricing-card__desc">Para quem gerencia múltiplas empresas ou tem uma equipe pequena.</p>
@@ -278,6 +360,8 @@
               <li><span class="check">✓</span> Suporte prioritário</li>
               <li><span class="check">✓</span> Exportação PDF e Excel</li>
               <li><span class="check">✓</span> Finanças pessoais (PF)</li>
+              <li><span class="check check--ai">✨</span> Modo IA + transcrição de áudio</li>
+              <li><span class="check check--ai">✨</span> <strong>Insights semanais com IA</strong></li>
             </ul>
             <a href="https://wa.me/5500000000000?text=Oi%2C+quero+assinar+o+plano+Business+do+Finance-boot%21" target="_blank" class="btn btn--outline btn--full">
               Assinar Business
@@ -410,6 +494,26 @@
             </button>
             <div class="faq-answer">
               <p>No plano Business, você pode convidar outros usuários para lançar transações na mesma empresa. Basta pedir ao Finance-boot o link de convite e compartilhar com seu time pelo próprio WhatsApp.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Como funciona o Modo IA?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No Modo IA (disponível nos planos Pro e Business), você digita mensagens em linguagem natural — como <em>"Gastei 80 reais em combustível"</em> ou <em>"Recebi 1.500 de cliente"</em> — e o Finance-boot usa Inteligência Artificial para interpretar, categorizar e registrar a transação automaticamente. Sem precisar escolher opções de menu.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Posso registrar gastos por áudio?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Com o Modo IA ativo (planos Pro e Business), basta mandar um áudio de voz no WhatsApp. A IA transcreve a mensagem automaticamente usando tecnologia de reconhecimento de voz e registra a transação — ideal para quando você está dirigindo ou com as mãos ocupadas.</p>
             </div>
           </div>
 
