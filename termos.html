@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termos de Uso — Boot Finance</title>
+  <meta name="description" content="Termos de Uso do Boot Finance. Condições para utilização do serviço de controle financeiro pelo WhatsApp." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .legal-page {
+      padding: 80px 0 100px;
+      background: linear-gradient(160deg, #f0fdf4 0%, #ffffff 60%);
+      min-height: 70vh;
+    }
+    .legal-container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .legal-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .legal-label {
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .legal-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -.03em;
+      color: var(--dark);
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .legal-meta {
+      font-size: .85rem;
+      color: var(--gray-500);
+    }
+    .legal-body h2 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin: 40px 0 12px;
+      letter-spacing: -.01em;
+    }
+    .legal-body h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 24px 0 8px;
+    }
+    .legal-body p {
+      font-size: .95rem;
+      color: var(--gray-700);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .legal-body ul {
+      margin: 0 0 16px 20px;
+    }
+    .legal-body ul li {
+      font-size: .95rem;
+      color: var(--gray-700);
+      line-height: 1.75;
+      margin-bottom: 6px;
+    }
+    .legal-body a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: text-decoration-color var(--transition);
+    }
+    .legal-body a:hover {
+      text-decoration-color: var(--primary);
+    }
+    .legal-highlight {
+      background: var(--green-light);
+      border-left: 3px solid var(--green);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 24px 0;
+    }
+    .legal-highlight p {
+      margin: 0;
+      font-size: .9rem;
+    }
+    .legal-back {
+      margin-bottom: 32px;
+    }
+    .legal-back a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .875rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .legal-back a:hover { opacity: .7; }
+    .plan-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: .9rem;
+    }
+    .plan-table th {
+      text-align: left;
+      padding: 10px 14px;
+      background: var(--gray-100);
+      color: var(--dark);
+      font-weight: 700;
+      border: 1px solid var(--gray-300);
+    }
+    .plan-table td {
+      padding: 10px 14px;
+      color: var(--gray-700);
+      border: 1px solid var(--gray-100);
+      vertical-align: top;
+    }
+    .plan-table tr:nth-child(even) td {
+      background: var(--gray-50);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="image/logo-icon.png" class="logo-img" width="38" height="38" alt="Boot Finance icon">
+        <span><strong>BOOT</strong> Finance</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="index.html#como-funciona">Como funciona</a>
+        <a href="index.html#funcionalidades">Funcionalidades</a>
+        <a href="index.html#ia" class="navbar__link--ia">IA <span class="nav-badge-new">Novo</span></a>
+        <a href="index.html#planos">Planos</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a href="https://wa.me/554784723085?text=Oi%2C+quero+come%C3%A7ar+a+usar+o+Finance-boot%21" target="_blank" class="btn btn--primary navbar__cta">
+        Começar grátis
+      </a>
+      <button class="navbar__burger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="navbar__mobile" id="mobile-menu">
+      <a href="index.html#como-funciona" onclick="toggleMenu()">Como funciona</a>
+      <a href="index.html#funcionalidades" onclick="toggleMenu()">Funcionalidades</a>
+      <a href="index.html#ia" onclick="toggleMenu()">IA ✨</a>
+      <a href="index.html#planos" onclick="toggleMenu()">Planos</a>
+      <a href="index.html#faq" onclick="toggleMenu()">FAQ</a>
+      <a href="https://wa.me/554784723085?text=Oi%2C+quero+come%C3%A7ar+a+usar+o+Finance-boot%21" target="_blank" class="btn btn--primary" onclick="toggleMenu()">Começar grátis</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="legal-page">
+      <div class="legal-container">
+
+        <div class="legal-back">
+          <a href="index.html">← Voltar para o início</a>
+        </div>
+
+        <div class="legal-header">
+          <p class="legal-label">Legal</p>
+          <h1 class="legal-title">Termos de Uso</h1>
+          <p class="legal-meta">Última atualização: 20 de maio de 2025 · Vigente a partir desta data</p>
+        </div>
+
+        <div class="legal-body">
+
+          <div class="legal-highlight">
+            <p>Resumo simples: use o Boot Finance para organizar suas finanças pessoais. Não use para fins ilegais. Você é responsável pelos dados que registra. Podemos cancelar contas que violem estes termos.</p>
+          </div>
+
+          <h2>1. Aceitação dos termos</h2>
+          <p>Ao enviar qualquer mensagem para o número do Boot Finance no WhatsApp, você concorda com estes Termos de Uso e com nossa <a href="privacidade.html">Política de Privacidade</a>. Se não concordar, por favor, encerre o uso do serviço.</p>
+          <p>O uso do serviço é permitido somente para pessoas maiores de 18 anos e residentes no Brasil.</p>
+
+          <h2>2. O serviço</h2>
+          <p>O <strong>Boot Finance</strong> é um assistente de controle financeiro pessoal que funciona via WhatsApp. O serviço permite:</p>
+          <ul>
+            <li>Registrar entradas e saídas financeiras por mensagens de texto ou áudio (Plano Pro).</li>
+            <li>Categorizar transações automaticamente.</li>
+            <li>Gerar e receber relatórios mensais via WhatsApp.</li>
+            <li>Exportar dados em PDF e Excel (Plano Pro).</li>
+            <li>Cadastrar transações recorrentes (Plano Pro).</li>
+            <li>Receber insights financeiros semanais via IA (Plano Pro).</li>
+          </ul>
+          <p>O Boot Finance é uma ferramenta de organização pessoal. Não somos uma instituição financeira, não oferecemos consultoria financeira e não realizamos movimentações de dinheiro. Nenhuma informação fornecida pelo serviço deve ser interpretada como conselho financeiro, fiscal ou jurídico.</p>
+
+          <h2>3. Planos e preços</h2>
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th>Plano</th>
+                <th>Preço</th>
+                <th>Principais limitações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Grátis</strong></td>
+                <td>R$ 0/mês</td>
+                <td>Até 50 transações/mês; sem exportação PDF/Excel; sem transações recorrentes; sem Modo IA</td>
+              </tr>
+              <tr>
+                <td><strong>Pro</strong></td>
+                <td>R$ 19,90/mês</td>
+                <td>Transações ilimitadas; todos os recursos disponíveis</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Os preços podem ser alterados com aviso prévio de 30 dias via WhatsApp. Usuários que já possuem assinatura ativa terão os preços garantidos pelo período contratado.</p>
+
+          <h2>4. Pagamento e assinatura (Plano Pro)</h2>
+          <h3>4.1 Processamento</h3>
+          <p>Todos os pagamentos são processados pelo <strong>Stripe</strong>, plataforma global de pagamentos. O Boot Finance não armazena dados de cartão de crédito.</p>
+
+          <h3>4.2 Cobrança</h3>
+          <p>A assinatura Pro é cobrada mensalmente na data de ativação. A cobrança é automática e recorrente até o cancelamento.</p>
+
+          <h3>4.3 Cancelamento</h3>
+          <p>Você pode cancelar a assinatura Pro a qualquer momento diretamente pelo WhatsApp, sem multa ou fidelidade. Ao cancelar, você mantém acesso ao Plano Pro até o fim do período já pago e, em seguida, retorna automaticamente ao Plano Grátis. Seus dados históricos são mantidos.</p>
+
+          <h3>4.4 Reembolso</h3>
+          <p>Oferecemos reembolso integral nos primeiros 7 dias após a ativação do Plano Pro, se você não estiver satisfeito. Após esse prazo, não realizamos reembolsos proporcionais por períodos não utilizados. Solicite reembolso via WhatsApp.</p>
+
+          <h2>5. Uso aceitável</h2>
+          <p>Você concorda em utilizar o Boot Finance apenas para fins legítimos de controle financeiro pessoal. É expressamente proibido:</p>
+          <ul>
+            <li>Usar o serviço para atividades ilegais, incluindo lavagem de dinheiro ou evasão fiscal.</li>
+            <li>Tentar acessar dados de outros usuários.</li>
+            <li>Realizar engenharia reversa, scraping ou qualquer exploração técnica do serviço.</li>
+            <li>Sobrecarregar o sistema com mensagens automatizadas ou em volume abusivo.</li>
+            <li>Compartilhar sua conta com terceiros.</li>
+            <li>Usar o serviço para fins comerciais sem autorização prévia por escrito.</li>
+            <li>Registrar informações falsas ou fabricadas com intenção de prejudicar terceiros.</li>
+          </ul>
+          <p>Violações podem resultar em suspensão imediata da conta sem direito a reembolso.</p>
+
+          <h2>6. Responsabilidade pelos dados</h2>
+          <p>Você é inteiramente responsável pelas informações financeiras que registra no Boot Finance. O serviço não valida a veracidade das transações inseridas. Não nos responsabilizamos por:</p>
+          <ul>
+            <li>Erros de lançamento feitos pelo usuário.</li>
+            <li>Decisões financeiras tomadas com base nos relatórios gerados.</li>
+            <li>Interpretações incorretas de dados fornecidos pelo Modo IA.</li>
+          </ul>
+
+          <h2>7. Disponibilidade do serviço</h2>
+          <p>Nos comprometemos a manter o Boot Finance disponível, mas não garantimos disponibilidade ininterrupta. O serviço pode ficar temporariamente indisponível por manutenção, falhas técnicas ou motivos de força maior.</p>
+          <p>Em caso de interrupção planejada com duração superior a 2 horas, notificaremos os usuários via WhatsApp com antecedência sempre que possível.</p>
+          <p>Não há compensação financeira por indisponibilidade, salvo casos de interrupção prolongada (superior a 72 horas consecutivas), onde proporcionalizaremos o valor da assinatura.</p>
+
+          <h2>8. Propriedade intelectual</h2>
+          <p>Todo o conteúdo do Boot Finance — incluindo código, design, textos, marca e funcionalidades — é propriedade de Guilherme Jeske e protegido por leis de propriedade intelectual.</p>
+          <p>Os dados financeiros que você registra pertencem a você. Concedemos a você uma licença limitada, não exclusiva e intransferível para usar o serviço conforme descrito nestes termos.</p>
+
+          <h2>9. Modificações no serviço</h2>
+          <p>Podemos adicionar, modificar ou remover funcionalidades do Boot Finance a qualquer momento. Em caso de remoção de funcionalidade que afete diretamente o Plano Pro contratado, você será notificado com 15 dias de antecedência e poderá cancelar com direito a reembolso proporcional.</p>
+
+          <h2>10. Encerramento de conta</h2>
+          <p>Você pode encerrar sua conta a qualquer momento via WhatsApp. Após a solicitação, seus dados serão mantidos por 90 dias (período de recuperação) e então excluídos permanentemente.</p>
+          <p>Podemos suspender ou encerrar contas que violem estes termos, com ou sem aviso prévio, dependendo da gravidade da violação.</p>
+
+          <h2>11. Limitação de responsabilidade</h2>
+          <p>Na máxima extensão permitida pela lei brasileira, o Boot Finance não se responsabiliza por danos indiretos, incidentais, especiais ou consequentes decorrentes do uso ou incapacidade de uso do serviço.</p>
+          <p>Nossa responsabilidade total, em qualquer caso, fica limitada ao valor pago pelo usuário nos últimos 3 meses de assinatura.</p>
+
+          <h2>12. Lei aplicável e foro</h2>
+          <p>Estes termos são regidos pelas leis da República Federativa do Brasil. Em caso de litígio, as partes elegem o foro da comarca de Joinville/SC, com renúncia expressa a qualquer outro, por mais privilegiado que seja.</p>
+          <p>Antes de qualquer medida legal, as partes comprometem-se a tentar resolver a questão amigavelmente via WhatsApp em até 15 dias.</p>
+
+          <h2>13. Alterações nestes termos</h2>
+          <p>Podemos atualizar estes termos periodicamente. Alterações relevantes serão comunicadas via WhatsApp com antecedência mínima de 10 dias. O uso continuado após a vigência das alterações representa aceite dos novos termos.</p>
+
+          <h2>14. Contato</h2>
+          <p>Dúvidas sobre estes termos? Fale conosco:</p>
+          <ul>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/554784723085" target="_blank">+55 47 8472-3085</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">
+          <img src="image/logo-sem-bg.png" class="logo-img" width="34" height="34" alt="Boot Finance logotipo">
+          <span><strong>BOOT</strong> Finance</span>
+        </a>
+        <p>Controle financeiro pelo WhatsApp.<br/>Para pessoas físicas brasileiras.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Produto</h4>
+          <a href="index.html#como-funciona">Como funciona</a>
+          <a href="index.html#funcionalidades">Funcionalidades</a>
+          <a href="index.html#planos">Planos e preços</a>
+        </div>
+        <div class="footer__col">
+          <h4>Suporte</h4>
+          <a href="index.html#faq">FAQ</a>
+          <a href="https://wa.me/554784723085" target="_blank">Falar com suporte</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="privacidade.html">Política de privacidade</a>
+          <a href="termos.html">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Boot Finance. Pagamentos via Stripe.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

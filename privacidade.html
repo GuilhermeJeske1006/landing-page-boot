@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Boot Finance</title>
+  <meta name="description" content="Política de Privacidade do Boot Finance. Saiba como coletamos, usamos e protegemos seus dados financeiros." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .legal-page {
+      padding: 80px 0 100px;
+      background: linear-gradient(160deg, #f0fdf4 0%, #ffffff 60%);
+      min-height: 70vh;
+    }
+    .legal-container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .legal-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .legal-label {
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .legal-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -.03em;
+      color: var(--dark);
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .legal-meta {
+      font-size: .85rem;
+      color: var(--gray-500);
+    }
+    .legal-body h2 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin: 40px 0 12px;
+      letter-spacing: -.01em;
+    }
+    .legal-body h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 24px 0 8px;
+    }
+    .legal-body p {
+      font-size: .95rem;
+      color: var(--gray-700);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .legal-body ul {
+      margin: 0 0 16px 20px;
+    }
+    .legal-body ul li {
+      font-size: .95rem;
+      color: var(--gray-700);
+      line-height: 1.75;
+      margin-bottom: 6px;
+    }
+    .legal-body a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: text-decoration-color var(--transition);
+    }
+    .legal-body a:hover {
+      text-decoration-color: var(--primary);
+    }
+    .legal-highlight {
+      background: var(--green-light);
+      border-left: 3px solid var(--green);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 24px 0;
+    }
+    .legal-highlight p {
+      margin: 0;
+      font-size: .9rem;
+    }
+    .legal-back {
+      margin-bottom: 32px;
+    }
+    .legal-back a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .875rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .legal-back a:hover { opacity: .7; }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="image/logo-icon.png" class="logo-img" width="38" height="38" alt="Boot Finance icon">
+        <span><strong>BOOT</strong> Finance</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="index.html#como-funciona">Como funciona</a>
+        <a href="index.html#funcionalidades">Funcionalidades</a>
+        <a href="index.html#ia" class="navbar__link--ia">IA <span class="nav-badge-new">Novo</span></a>
+        <a href="index.html#planos">Planos</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a href="https://wa.me/554784723085?text=Oi%2C+quero+come%C3%A7ar+a+usar+o+Finance-boot%21" target="_blank" class="btn btn--primary navbar__cta">
+        Começar grátis
+      </a>
+      <button class="navbar__burger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="navbar__mobile" id="mobile-menu">
+      <a href="index.html#como-funciona" onclick="toggleMenu()">Como funciona</a>
+      <a href="index.html#funcionalidades" onclick="toggleMenu()">Funcionalidades</a>
+      <a href="index.html#ia" onclick="toggleMenu()">IA ✨</a>
+      <a href="index.html#planos" onclick="toggleMenu()">Planos</a>
+      <a href="index.html#faq" onclick="toggleMenu()">FAQ</a>
+      <a href="https://wa.me/554784723085?text=Oi%2C+quero+come%C3%A7ar+a+usar+o+Finance-boot%21" target="_blank" class="btn btn--primary" onclick="toggleMenu()">Começar grátis</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="legal-page">
+      <div class="legal-container">
+
+        <div class="legal-back">
+          <a href="index.html">← Voltar para o início</a>
+        </div>
+
+        <div class="legal-header">
+          <p class="legal-label">Legal</p>
+          <h1 class="legal-title">Política de Privacidade</h1>
+          <p class="legal-meta">Última atualização: 20 de maio de 2025 · Vigente a partir desta data</p>
+        </div>
+
+        <div class="legal-body">
+
+          <div class="legal-highlight">
+            <p>Resumo simples: usamos seus dados apenas para fazer o Boot Finance funcionar. Não vendemos, não repassamos e não usamos para publicidade. Seus dados financeiros são só seus.</p>
+          </div>
+
+          <h2>1. Quem somos</h2>
+          <p>O <strong>Boot Finance</strong> é um serviço de controle financeiro pessoal operado inteiramente via WhatsApp, desenvolvido e mantido por Guilherme Jeske ("nós", "nosso"). Para dúvidas, você pode nos contatar diretamente pelo WhatsApp no número <a href="https://wa.me/554784723085" target="_blank">+55 47 8472-3085</a>.</p>
+
+          <h2>2. Dados que coletamos</h2>
+          <p>Coletamos somente o necessário para que o serviço funcione:</p>
+          <h3>2.1 Dados fornecidos por você</h3>
+          <ul>
+            <li><strong>Número de telefone (WhatsApp):</strong> usado como identificador único da sua conta.</li>
+            <li><strong>Nome:</strong> informado no momento do cadastro, usado apenas para personalizar as mensagens.</li>
+            <li><strong>Transações financeiras:</strong> valores, categorias e descrições que você registra (entradas e saídas).</li>
+            <li><strong>Mensagens de texto e áudio (Plano Pro):</strong> processadas em tempo real pela IA para extração de dados financeiros. Áudios não são armazenados após o processamento.</li>
+          </ul>
+          <h3>2.2 Dados gerados automaticamente</h3>
+          <ul>
+            <li><strong>Data e hora das transações:</strong> registrados automaticamente para geração de relatórios.</li>
+            <li><strong>Plano contratado:</strong> Grátis ou Pro, para controle de funcionalidades disponíveis.</li>
+            <li><strong>Dados de pagamento (Plano Pro):</strong> processados exclusivamente pelo Stripe. Não armazenamos dados de cartão de crédito.</li>
+          </ul>
+
+          <h2>3. Como usamos seus dados</h2>
+          <p>Seus dados são usados exclusivamente para:</p>
+          <ul>
+            <li>Registrar e categorizar suas transações financeiras.</li>
+            <li>Gerar relatórios mensais automáticos e exportações PDF/Excel (Plano Pro).</li>
+            <li>Enviar insights semanais personalizados via WhatsApp (Plano Pro).</li>
+            <li>Processar transações recorrentes cadastradas por você.</li>
+            <li>Autenticar sua sessão de forma segura via JWT.</li>
+            <li>Processar pagamentos da assinatura Pro via Stripe.</li>
+            <li>Enviar comunicações relacionadas ao serviço (atualizações, confirmações).</li>
+          </ul>
+          <p><strong>Não usamos seus dados para publicidade, perfilamento ou qualquer finalidade comercial além do próprio serviço.</strong></p>
+
+          <h2>4. Compartilhamento de dados</h2>
+          <p>Não vendemos nem repassamos seus dados pessoais a terceiros. Utilizamos os seguintes provedores de serviço, todos com políticas de privacidade próprias e compliance com LGPD:</p>
+          <ul>
+            <li><strong>Stripe:</strong> processamento de pagamentos (Plano Pro). Seus dados de pagamento são gerenciados diretamente pelo Stripe.</li>
+            <li><strong>Meta (WhatsApp Business API):</strong> canal de comunicação. Mensagens trafegam pela infraestrutura do WhatsApp com criptografia de ponta a ponta.</li>
+            <li><strong>Provedor de IA (Plano Pro):</strong> textos e áudios são enviados para processamento de linguagem natural. Não são armazenados pelo provedor após o processamento.</li>
+          </ul>
+          <p>Em casos de obrigação legal (ordem judicial, autoridade regulatória), podemos ser obrigados a divulgar dados. Notificaremos o usuário sempre que legalmente possível.</p>
+
+          <h2>5. Armazenamento e segurança</h2>
+          <p>Seus dados são armazenados em banco de dados <strong>PostgreSQL</strong> com as seguintes medidas de segurança:</p>
+          <ul>
+            <li>Autenticação via <strong>JWT (JSON Web Token)</strong> com expiração automática.</li>
+            <li>Conexões criptografadas (TLS/SSL).</li>
+            <li>Monitoramento em tempo real dos sistemas.</li>
+            <li>Acesso restrito ao banco de dados por lista de IPs autorizados.</li>
+            <li>Backups regulares dos dados.</li>
+          </ul>
+          <p>Nenhum sistema é 100% invulnerável. Em caso de incidente de segurança que afete seus dados, você será notificado via WhatsApp no menor prazo possível, conforme exigido pela LGPD.</p>
+
+          <h2>6. Retenção de dados</h2>
+          <ul>
+            <li><strong>Conta ativa:</strong> dados mantidos enquanto você utilizar o serviço.</li>
+            <li><strong>Após cancelamento:</strong> dados mantidos por até 90 dias para possível reativação. Após esse prazo, são excluídos permanentemente.</li>
+            <li><strong>Exclusão imediata:</strong> você pode solicitar a exclusão completa dos seus dados a qualquer momento pelo WhatsApp.</li>
+            <li><strong>Áudios (Plano Pro):</strong> excluídos imediatamente após o processamento pela IA, sem armazenamento.</li>
+          </ul>
+
+          <h2>7. Seus direitos (LGPD)</h2>
+          <p>Conforme a Lei Geral de Proteção de Dados (Lei 13.709/2018), você tem o direito de:</p>
+          <ul>
+            <li><strong>Acesso:</strong> solicitar uma cópia de todos os dados que temos sobre você.</li>
+            <li><strong>Correção:</strong> atualizar dados incorretos ou desatualizados.</li>
+            <li><strong>Exclusão:</strong> solicitar a exclusão de todos os seus dados pessoais.</li>
+            <li><strong>Portabilidade:</strong> receber seus dados em formato estruturado (JSON ou Excel).</li>
+            <li><strong>Revogação do consentimento:</strong> cancelar o uso do serviço a qualquer momento.</li>
+            <li><strong>Informação:</strong> saber com quais terceiros seus dados foram compartilhados.</li>
+          </ul>
+          <p>Para exercer qualquer um desses direitos, envie uma mensagem para o nosso WhatsApp: <a href="https://wa.me/554784723085" target="_blank">+55 47 8472-3085</a>. Respondemos em até 5 dias úteis.</p>
+
+          <h2>8. Cookies e rastreamento</h2>
+          <p>O Boot Finance opera exclusivamente via WhatsApp. Não utilizamos cookies, pixels de rastreamento ou qualquer tecnologia de rastreamento em nosso serviço principal.</p>
+          <p>Esta página de política de privacidade não utiliza ferramentas de analytics ou rastreamento de visitantes.</p>
+
+          <h2>9. Menores de idade</h2>
+          <p>O Boot Finance é destinado a maiores de 18 anos. Não coletamos intencionalmente dados de menores. Se identificarmos uma conta de menor de idade, a conta será encerrada e os dados excluídos.</p>
+
+          <h2>10. Alterações nesta política</h2>
+          <p>Podemos atualizar esta política periodicamente. Em caso de alterações relevantes, você será notificado via WhatsApp com antecedência mínima de 10 dias. O uso continuado do serviço após as alterações representa aceite da nova política.</p>
+
+          <h2>11. Contato</h2>
+          <p>Dúvidas sobre privacidade? Fale conosco:</p>
+          <ul>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/554784723085" target="_blank">+55 47 8472-3085</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">
+          <img src="image/logo-sem-bg.png" class="logo-img" width="34" height="34" alt="Boot Finance logotipo">
+          <span><strong>BOOT</strong> Finance</span>
+        </a>
+        <p>Controle financeiro pelo WhatsApp.<br/>Para pessoas físicas brasileiras.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Produto</h4>
+          <a href="index.html#como-funciona">Como funciona</a>
+          <a href="index.html#funcionalidades">Funcionalidades</a>
+          <a href="index.html#planos">Planos e preços</a>
+        </div>
+        <div class="footer__col">
+          <h4>Suporte</h4>
+          <a href="index.html#faq">FAQ</a>
+          <a href="https://wa.me/554784723085" target="_blank">Falar com suporte</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="privacidade.html">Política de privacidade</a>
+          <a href="termos.html">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Boot Finance. Pagamentos via Stripe.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
